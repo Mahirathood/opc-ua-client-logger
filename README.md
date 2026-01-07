@@ -18,6 +18,8 @@ The project demonstrates a basic OPC UA client-server setup using Python, where 
 ---
 
 ## Project Structure
+
+
 opc-ua-client-logger/
 ├── opcua_server.py
 ├── opcua_client.py
