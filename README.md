@@ -57,9 +57,11 @@ The client will connect to the server, read tag values every minute, and log the
 
 ## Screenshots
 Screenshots demonstrating server execution, client execution, and CSV output are included in the `screenshots` folder.
+
 ---
 ## Purpose
 This project was developed as part of an academic assignment to demonstrate OPC UA client-server communication, periodic data acquisition, and automated data logging using Python.
+
 ---
 ## Author
 **Mahendar Bhukya**
