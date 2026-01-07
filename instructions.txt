@@ -1,0 +1,55 @@
+Assignment 2: OPC UA Client Development and Data Logging
+
+System Requirements:
+This project was developed and tested on a Windows system using Python 3.x.
+The following Python libraries are required:
+- opcua
+- pandas
+
+Installation:
+Install the required Python libraries using the command below:
+python -m pip install opcua pandas
+
+OPC UA Server Setup:
+A local OPC UA server is implemented using Python to simulate OPC UA data.
+The server can be started by running:
+python opcua_server.py
+
+Once started, the server runs locally at:
+opc.tcp://localhost:1000
+
+The server creates 10 dummy OPC UA tags (Tag1 to Tag10) and continuously
+updates their values to simulate real-time data.
+
+OPC UA Client Execution:
+Open a new terminal window while keeping the server running.
+Run the OPC UA client using:
+python opcua_client.py
+
+The client connects to the local OPC UA server and reads values from all
+10 tags once every minute.
+
+Data Logging:
+Each data record includes:
+- A human-readable timestamp
+- Epoch time
+- Values of Tag1 through Tag10
+
+The collected data is automatically stored in CSV files inside the
+'sample_output' folder.
+
+The logging is designed to create CSV files on an hourly basis.
+A new CSV file is generated automatically for each hour of data collection.
+
+Output Files:
+CSV files follow the naming format:
+OPC_Log_YYYY-MM-DD_HH.csv
+
+Stopping the Programs:
+To stop the client, press CTRL + C in the client terminal.
+To stop the server, press CTRL + C in the server terminal.
+
+Purpose:
+This assignment demonstrates basic OPC UA client-server communication,
+periodic data acquisition, and automated data logging using Python.
+This implementation is intended for academic and non-commercial use.
