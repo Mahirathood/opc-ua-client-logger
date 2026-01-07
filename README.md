@@ -32,7 +32,9 @@ opc-ua-client-logger/
 └── sample_output/
 └── OPC_Log_YYYY-MM-DD_HH.csv
 
+
 ---
+
 ## How to Run the Project
 ### 1. Install Dependencies
 python -m pip install opcua pandas
